@@ -317,6 +317,57 @@ nav {
 .information-body p:first-child {
   margin-bottom: 32px;
 }
+/* schedule */
+table {
+  border-collapse: unset;
+}
+.schedule-table {
+  width: 100%;
+  margin: 20px 0;
+  table-layout: fixed;
+}
+.schedule-table thead {
+  background-color: #19a78e;
+}
+.schedule-table th {
+  color: #fff;
+}
+.schedule-table td {
+  color: var(--main-green);
+}
+.schedule-table th,
+.schedule-table td {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 150%; /* 19.5px */
+  letter-spacing: -0.286px;
+}
+.shedule-tabel-border-index {
+  position: relative;
+}
+.shedule-tabel-border-index:after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  bottom: 0px;
+  right: 0;
+  border-bottom: 1px solid rgba(25, 167, 142, 0.4);
+}
+.shedule-tabel-border-ampm {
+  position: relative;
+}
+.shedule-tabel-border-ampm:after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  bottom: 0px;
+  right: 0;
+  border-bottom: 1px solid rgba(25, 167, 142, 0.4);
+}
+.shedule-tabele-border {
+  border-bottom: 1px solid rgba(25, 167, 142, 0.4);
+}
 /* characteristics */
 .characteristics-wrapper {
   width: 100%;
@@ -460,7 +511,113 @@ nav {
   margin: 0 auto;
   border-bottom: 1px solid var(--border-color);
 }
-
+/* アクセス・診療スケジュール */
+.acces-wrapper {
+  width: 100%;
+  max-width: 1280px;
+  height: 100%;
+  overflow: hidden;
+}
+.wrapper-arc-acces {
+  position: relative;
+}
+.wrapper-arc-acces:after {
+  background: var(--sub-color-green);
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  margin-left: -327px;
+  margin-right: -327px;
+  padding-left: 327px;
+  padding-right: 327px;
+  height: 386px;
+  position: absolute;
+  bottom: -386px;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+}
+.wrapper-box-accses {
+  position: relative;
+}
+.wrapper-box-accses:after {
+  background: var(--sub-color-green);
+  height: 100%;
+  position: absolute;
+  top: 384px;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+}
+.acces-wrapper .top-section-title {
+  padding-top: 49px;
+  margin-bottom: 82px;
+}
+.acces-body {
+  background-color: #ffffff;
+  max-width: 1000px;
+  width: 100%;
+  height: 1263px;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding-left: 87px;
+  padding-right: 87px;
+  padding-bottom: 82px;
+  padding-top: 62px;
+}
+.acces-info {
+}
+.acces-row {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px dotted #000;
+}
+.acces-row > dt,
+.acces-row > dd {
+  padding: 22px 0;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.304px;
+}
+.acces-row > dt {
+  font-weight: 400;
+  flex-basis: 146px;
+  margin-right: 79px;
+}
+.acces-row > dd {
+  flex-basis: 341px;
+}
+.acces-table {
+  width: 826px;
+}
+.acces-table .schedule-table th {
+  padding-top: 10px;
+  padding-bottom: 13px;
+}
+.acces-table .schedule-table td {
+  padding-top: 10px;
+  padding-bottom: 13px;
+}
+.acces-table .schedule-table tr > th:nth-of-type(1) {
+  padding-left: 25px;
+  text-align: left;
+}
+.acces-table .schedule-table tr > td {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.acces-table .am-index {
+  line-height: 88px !important;
+}
+.acces-table .pm-index {
+  line-height: 114px !important;
+}
+.shedule-tabel-border-index:after {
+  width: 85px;
+}
+.shedule-tabel-border-ampm:after {
+  width: 200px;
+}
 /* body {
   background-color: #333;
 } */
