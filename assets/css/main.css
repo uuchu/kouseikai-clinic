@@ -881,3 +881,20 @@ footer {
   margin-top: 36px;
   margin-right: 89px;
 }
+.page-title-header {
+  background-image: url(/assets/img/lower-layer/header-img.webp);
+  max-width: 1280px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: var(--main-green);
+}
+.page-title-header h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 47.78px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200px; /* 71.67px */
+  letter-spacing: -1.051px;
+  margin: auto;
+}
