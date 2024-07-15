@@ -858,3 +858,26 @@ footer {
   color: inherit;
   font-size: 10px;
 }
+
+/*
+*
+* 
+一般医科ページ
+*
+*
+*/
+
+.lower_layer_page_header {
+  position: unset;
+  width: 100%;
+  height: 120px;
+  padding-top: unset;
+}
+.lower_layer_page_header .header-left {
+  margin-left: 86px;
+  margin-top: 40px;
+}
+.lower_layer_page_header .header-right {
+  margin-top: 36px;
+  margin-right: 89px;
+}
