@@ -912,6 +912,31 @@ footer {
   max-width: 100px;
   border-bottom: 1px solid var(--sub-color-orange);
 }
+.lower-layer-page-wrapper h3 {
+  background-color: var(--sub-color-green);
+  width: 100%;
+  height: 80px;
+  border-radius: 6px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 48px;
+  font-size: 33.18px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 1.659px;
+  position: relative;
+  margin-top: 46px;
+}
+.lower-layer-page-wrapper h3::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 33.18px;
+  background-color: var(--main-green);
+  top: 23px;
+  left: 24px;
+}
 /* mc-characteristics */
 .mc-characteristics {
   padding-bottom: 100px;
@@ -973,4 +998,141 @@ footer {
 }
 .mc-menu-body img {
   max-width: 230px;
+}
+
+/* mc-vaccin */
+.mc-vaccine {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.mc-vaccine-body {
+  margin-top: 46px;
+}
+.mc-vaccine-body > p {
+  text-align: center;
+  margin-top: 46px;
+  margin-bottom: 46px;
+}
+.vaccine-price-list {
+  background-color: var(--sub-color-green);
+  border: 3px solid var(--main-green);
+  padding: 103px 126px 96px;
+  border-radius: 16px;
+  margin: auto;
+  margin-bottom: 150px;
+}
+.vaccine-price-list .row {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px dotted var(--main-green);
+  padding: 16px 0;
+  align-items: center;
+}
+.vaccine-price-list .row:nth-child(1) {
+  padding-top: 0;
+}
+.vaccine-price-list dt,
+.vaccine-price-list dd {
+  flex: 1;
+  margin: 0;
+  padding: 5px;
+}
+.vaccine-price-list dt {
+  flex-basis: 363px;
+  background-color: #fff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  border-radius: 5px;
+  color: var(--main-green);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.8px;
+  height: 48px;
+}
+.vaccine-price-list dd {
+  flex-basis: 305px;
+  text-align: right;
+  padding: 10px;
+  color: var(--font-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 200%; /* 64px */
+  letter-spacing: 1.6px;
+}
+.vaccine-price-list dd > span {
+  font-size: 32px;
+  font-weight: 500;
+}
+.vaccine-price-list .note {
+  margin-top: 16px;
+  text-align: right;
+}
+.shingles-list {
+}
+.shingles-list .row {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px dotted var(--main-green);
+  padding: 16px 0;
+  align-items: center;
+}
+.shingles-list .row:nth-child(1) {
+  padding-top: 0;
+}
+.shingles-list dt,
+.shingles-list dd {
+  flex: 1;
+  margin: 0;
+}
+.shingles-list dt {
+  flex-basis: 363px;
+  background-color: var(--sub-color-green);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  border-radius: 5px;
+  color: var(--main-green);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.8px;
+  height: 48px;
+  margin-right: 80px;
+}
+.shingles-list dd {
+  flex-basis: 557px;
+  text-align: left;
+  color: var(--font-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 200%; /* 64px */
+  letter-spacing: 0.8px;
+}
+.shingles-list .row:nth-child(2) dd {
+  line-height: 150%;
+}
+.shingles-list dd > span {
+  font-size: 32px;
+  font-weight: 500;
+}
+.mc-nosmork {
+  background-color: var(--sub-color-green);
+  padding-bottom: 100px;
+}
+.mc-nosmork .top-section-title {
+  margin-bottom: 46px;
+}
+.mc-nosmork-body p {
+  text-align: center;
+  margin-bottom: 46px;
+}
+.mc-nosmork-body p:nth-child(2) {
+  margin-bottom: 0;
+  color: var(--sub-color-pink);
+}
+/**/
+.text-start {
+  text-align: left !important;
 }
