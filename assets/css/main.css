@@ -882,7 +882,7 @@ footer {
   margin-right: 89px;
 }
 .page-title-header {
-  background-image: url(./assets/img/lower-layer/header-img.webp);
+  background-image: url(/assets/img/lower-layer/header-img.webp);
   max-width: 1280px;
   height: 200px;
   margin: 0 auto;
