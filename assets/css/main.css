@@ -1202,6 +1202,62 @@ footer {
   top: 83px;
   z-index: 1;
 }
+.career {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 16px;
+  border: 2px solid #8cd3c6;
+}
+.career dl {
+  margin: 0;
+  padding: 0;
+}
+.career .row {
+  display: flex;
+  flex-wrap: nowrap;
+  border-bottom: 1px solid #8cd3c6;
+}
+.career .row:nth-child(1) dt {
+  border-radius: 16px 0 0 0;
+}
+.career .row:nth-child(2) {
+  border-radius: 0 0 0 16px;
+}
+.career .row:nth-child(2) dt {
+  border-radius: 0 0 0 16px;
+}
+.career dt,
+.career dd {
+  margin: 0;
+  padding: 10px;
+}
+.career dt {
+  flex-basis: 20%;
+  font-weight: 700;
+  background-color: var(--sub-color-green);
+  border-right: 1px solid #8cd3c6;
+  text-align: left;
+  color: var(--main-green);
+  line-height: 200%; /* 32px */
+  letter-spacing: 0.8px;
+  padding-top: 25px;
+  padding-left: 35px;
+}
+.career dd {
+  flex-basis: 80%;
+  line-height: 200%; /* 32px */
+  letter-spacing: 0.8px;
+  padding-top: 25px;
+  padding-left: 45px;
+  padding-bottom: 25px;
+}
+
+.career dd br {
+  display: block;
+  content: '';
+  margin: 4px 0;
+}
+
 /**/
 .text-start {
   text-align: left !important;
