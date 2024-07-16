@@ -927,6 +927,7 @@ footer {
   height: 100%;
   overflow: hidden;
   padding-top: unset;
+  padding-bottom: 180px;
 }
 .wrapper-arc-menu {
   position: relative;
@@ -954,7 +955,7 @@ footer {
   background: var(--sub-color-green);
   height: 100%;
   position: absolute;
-  top: 285px;
+  top: 180px;
   right: 0;
   left: 0;
   z-index: -1;
@@ -966,7 +967,9 @@ footer {
 }
 .mc-menu-body {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .mc-menu-body img {
   max-width: 230px;
