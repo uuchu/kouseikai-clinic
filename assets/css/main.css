@@ -497,7 +497,7 @@ td {
 }
 .menu-item > ul {
   list-style-position: inside;
-  list-style-image: url(./assets/icon/row.svg);
+  list-style-image: url(/assets/icon/row.svg);
   padding-left: 15px;
   padding-right: 11px;
   margin-top: 25px;
