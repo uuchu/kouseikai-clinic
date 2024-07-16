@@ -1251,13 +1251,60 @@ footer {
   padding-left: 45px;
   padding-bottom: 25px;
 }
-
 .career dd br {
   display: block;
   content: '';
   margin: 4px 0;
 }
-
+/* mc-schedule */
+.mc-schedule {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: var(--sub-color-green);
+}
+.mc-schedule .top-section-title {
+  margin-bottom: 100px;
+}
+.mc-schedule-body {
+  max-width: 1000px;
+  background-color: #fff;
+  padding: 50px 87px;
+  margin: 0 auto;
+  border-radius: 16px;
+}
+.mc-schedule-body .schedule-table th {
+  padding-top: 10px;
+  padding-bottom: 13px;
+}
+.mc-schedule-body .schedule-table td {
+  padding-top: 10px;
+  padding-bottom: 13px;
+}
+.mc-schedule-body .schedule-table tr > th:nth-of-type(1) {
+  padding-left: 25px;
+  text-align: left;
+}
+.mc-schedule-body .schedule-table tr > td {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.mc-schedule-body .am-index {
+  line-height: 88px !important;
+}
+.mc-schedule-body .pm-index {
+  line-height: 114px !important;
+  padding-bottom: 30px !important;
+}
+.mc-schedule-body .shedule-tabel-border-index:after {
+  width: 85px;
+}
+.mc-schedule-body .shedule-tabel-border-ampm:after {
+  width: 200px;
+}
+.mc-schedule-body span {
+  color: inherit;
+  font-size: 10px;
+}
 /**/
 .text-start {
   text-align: left !important;
