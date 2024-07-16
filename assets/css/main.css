@@ -920,7 +920,6 @@ footer {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 48px;
-  font-size: 33.18px;
   font-weight: 400;
   line-height: 50px;
   letter-spacing: 1.659px;
@@ -1117,9 +1116,11 @@ footer {
   font-size: 32px;
   font-weight: 500;
 }
+/* mc-NoSmork */
 .mc-nosmork {
   background-color: var(--sub-color-green);
   padding-bottom: 100px;
+  max-width: 1280px;
 }
 .mc-nosmork .top-section-title {
   margin-bottom: 46px;
@@ -1131,6 +1132,75 @@ footer {
 .mc-nosmork-body p:nth-child(2) {
   margin-bottom: 0;
   color: var(--sub-color-pink);
+}
+/* mc-Doctor */
+.mc-doctor {
+  max-width: 1280px;
+}
+.mc-doctor .top-section-title {
+  margin-bottom: 100px;
+}
+.mc-doctor-body {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  height: 880px;
+  margin-bottom: 87px;
+}
+.doctor-txt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 622px;
+  z-index: 10;
+  background: rgba(243, 249, 240, 0.9);
+  border-radius: 6px;
+  padding: 50px 70px;
+}
+.doctor-txt > h3 {
+  margin-top: unset;
+  background-color: unset;
+  width: 100%;
+  height: auto;
+  border-radius: unset;
+  padding: 0;
+  margin-bottom: 24px;
+  line-height: 200%;
+  letter-spacing: 1.659px;
+  position: unset;
+  font-family: 'Shippori Mincho B1', serif;
+  font-weight: 700;
+  color: var(--main-green);
+}
+.doctor-txt > h3::before {
+  display: none;
+}
+.doctor-greeting {
+  font-family: 'Shippori Mincho B1', serif;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.doctor-signature {
+  font-family: 'Shippori Mincho B1', serif;
+  font-weight: 700;
+  text-align: right;
+}
+.doctor-signature > ruby {
+  font-family: 'Shippori Mincho B1', serif;
+  font-weight: 700;
+  text-align: right;
+}
+.doctor-signature > ruby > rt {
+  font-family: 'Shippori Mincho B1', serif;
+  font-weight: 700;
+  text-align: right;
+  font-size: 10px;
+}
+.mc-doctor-body > img {
+  position: absolute;
+  right: 0;
+  top: 83px;
+  z-index: 1;
 }
 /**/
 .text-start {
