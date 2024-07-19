@@ -1316,9 +1316,27 @@ footer {
 /* Dock template */
 .dock-list {
   max-width: 1000px;
-  background-color: var(--sub-color-green);
+  background-color: #fff;
   padding: 35px 70px;
   border-radius: 16px;
+  position: relative;
+  margin-top: 56px;
+}
+.dock-list > h3 {
+  position: absolute;
+  top: -48px;
+  left: 15px;
+  color: var(--main-green);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 200%; /* 48px */
+  letter-spacing: 1.2px;
+  padding: 0;
+  background-color: unset;
+  margin-top: 0;
+}
+.dock-list > h3::before {
+  display: none;
 }
 .dock-list > ul {
   list-style-position: inside;
@@ -1345,6 +1363,19 @@ footer {
   margin: 0 auto;
   border-bottom: 1px dotted var(--main-green);
 }
+
+.dock-singles-list,
+.dock-singles-list-white {
+  margin-bottom: 16px;
+}
+.dock-singles-list dt {
+  text-align: center;
+}
+.dock-singles-list-white dt {
+  background-color: #fff;
+  text-align: center;
+}
+
 /* dock-characteristics */
 .dock-characteristics {
   max-width: 1000px;
@@ -1375,6 +1406,12 @@ footer {
   text-align: center;
   margin-bottom: 100px;
 }
+.dock-list-menu {
+  background-color: var(--sub-color-green);
+  padding: 35px 70px;
+  margin-top: 0;
+}
+
 /* dock-phe(Public Health Examination) */
 .dock-phe {
   background-color: var(--sub-color-green);
