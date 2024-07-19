@@ -29,6 +29,7 @@ h3 {
 }
 h4 {
   font-size: 27.65px;
+  color: var(--main-green);
 }
 p {
   font-size: 16px;
@@ -1380,7 +1381,62 @@ footer {
   background-color: #fff;
   text-align: center;
 }
+.dock-steps {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  margin-top: 26px;
+  margin-bottom: 46px;
+}
 
+.dock-steps li {
+  display: block;
+  position: relative;
+  z-index: 1;
+  font-size: 1em;
+  padding: 10px 0 10px 10px;
+  margin-left: 52px;
+}
+.dock-steps li::before {
+  width: 14px;
+  height: 14px;
+  content: '';
+  border-radius: 50%;
+  background-color: var(--border-color);
+  position: absolute;
+  top: 20px;
+  left: -28px;
+}
+.dock-steps li.current::before {
+  background-color: var(--main-green);
+}
+.dock-steps li:last-of-type::after {
+  position: absolute;
+  bottom: 13px;
+  left: -29px;
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-image: url(/assets/icon/arrow-gray.svg);
+}
+.dock-steps::after {
+  position: absolute;
+  top: 13px;
+  left: 29px;
+  z-index: 0;
+  width: 3px;
+  height: calc(100% - 32px);
+  content: '';
+  background-color: var(--border-color);
+}
+.dock-steps > li > p:first-of-type {
+  color: var(--main-green);
+  font-weight: 700;
+}
+.dock-step-mark {
+  background-color: var(--sub-color-green);
+}
 /* dock-characteristics */
 .dock-characteristics {
   max-width: 1000px;
@@ -1477,6 +1533,29 @@ footer {
   margin-bottom: 46px;
 }
 .shc-text {
+  text-align: left !important;
+  margin-top: 46px;
+  margin-bottom: 46px;
+}
+/* dock-shg(Specific health guidance) */
+.dock-shg {
+  background-color: #fff;
+  max-width: 1280px;
+}
+.dock-shg > .top-section-title {
+  margin-bottom: 46px;
+}
+.dock-shg-body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.dock-shg-body > p {
+  text-align: center;
+}
+.dock-shg-body > p {
+  margin-bottom: 46px;
+}
+.shg-text {
   text-align: left !important;
   margin-top: 46px;
   margin-bottom: 46px;
