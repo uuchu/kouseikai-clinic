@@ -1363,7 +1363,9 @@ footer {
   margin: 0 auto;
   border-bottom: 1px dotted var(--main-green);
 }
-
+.dock-list-green {
+  background-color: var(--sub-color-green);
+}
 .dock-singles-list,
 .dock-singles-list-white {
   margin-bottom: 16px;
@@ -1431,9 +1433,29 @@ footer {
   margin-bottom: 32px;
 }
 .dock-phe-body > p:last-of-type {
-  margin-bottom: 54px;
+  margin-bottom: 46px;
 }
-
+/* dock chc(Corporate Health Check-up) */
+.dock-chc {
+  background-color: #fff;
+  max-width: 1280px;
+}
+.dock-chc > .top-section-title {
+  margin-bottom: 46px;
+}
+.dock-chc-body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.dock-chc-body > p {
+  text-align: center;
+}
+.dock-chc-body > p:first-child {
+  margin-bottom: 32px;
+}
+.dock-chc-body > p:last-of-type {
+  margin-bottom: 46px;
+}
 /**/
 .text-start {
   text-align: left !important;
