@@ -1560,6 +1560,50 @@ footer {
   margin-top: 46px;
   margin-bottom: 46px;
 }
+/* dock-dock(人間ドック) */
+.dock-dock {
+  background-color: var(--sub-color-green);
+  max-width: 1280px;
+}
+.dock-dock > .top-section-title {
+  margin-bottom: 46px;
+}
+.dock-dock-body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.dock-dock-body > p {
+  margin-bottom: 32px;
+}
+.dock-dock-body-headline > p {
+  text-align: center;
+}
+.dock-dock-body-headline > p:first-child {
+  margin-bottom: 32px;
+}
+.dock-dock-body-headline > p:last-of-type {
+  margin-bottom: 46px;
+}
+.dock-dock-body > h3 {
+  background-color: #fff;
+  margin-bottom: 46px;
+}
+.dock-price {
+  font-size: 24px !important;
+  letter-spacing: 1.2px !important;
+}
+.dock-dock-body > .dock-list > ul > li:last-of-type {
+  background-position: 0px 16px;
+}
+.about-abi {
+  display: flex;
+  align-items: center;
+  column-gap: 68px;
+}
+.about-abi p:first-child {
+  margin-bottom: 32px;
+}
+
 /**/
 .text-start {
   text-align: left !important;
