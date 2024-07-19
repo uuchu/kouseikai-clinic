@@ -1363,6 +1363,9 @@ footer {
   margin: 0 auto;
   border-bottom: 1px dotted var(--main-green);
 }
+.dock-list-dotted {
+  background-image: unset !important;
+}
 .dock-list-green {
   background-color: var(--sub-color-green);
 }
@@ -1413,7 +1416,6 @@ footer {
   padding: 35px 70px;
   margin-top: 0;
 }
-
 /* dock-phe(Public Health Examination) */
 .dock-phe {
   background-color: var(--sub-color-green);
@@ -1454,6 +1456,29 @@ footer {
   margin-bottom: 32px;
 }
 .dock-chc-body > p:last-of-type {
+  margin-bottom: 46px;
+}
+/* dock-shc(Specific health checkup ) */
+.dock-shc {
+  background-color: var(--sub-color-green);
+  max-width: 1280px;
+}
+.dock-shc > .top-section-title {
+  margin-bottom: 46px;
+}
+.dock-shc-body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.dock-shc-body > p {
+  text-align: center;
+}
+.dock-shc-body > p {
+  margin-bottom: 46px;
+}
+.shc-text {
+  text-align: left !important;
+  margin-top: 46px;
   margin-bottom: 46px;
 }
 /**/
