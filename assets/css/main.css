@@ -1389,7 +1389,6 @@ footer {
   margin-top: 26px;
   margin-bottom: 46px;
 }
-
 .dock-steps li {
   display: block;
   position: relative;
@@ -1436,6 +1435,67 @@ footer {
 }
 .dock-step-mark {
   background-color: var(--sub-color-green);
+}
+/*申し込みフォーム */
+.cta-form {
+  background-color: #fff;
+  max-width: 1280px;
+}
+.cta-form > .top-section-title {
+  margin-bottom: 46px;
+}
+.cta-form-body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.cta-form-body > p:first-child {
+  margin-bottom: 120px;
+  text-align: center;
+}
+.cta-buttons {
+  display: flex;
+  column-gap: 100px;
+}
+.cta-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.micro-copy-cta {
+  color: #000;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.352px;
+  margin-bottom: 6px;
+}
+.btn-call,
+.btn-form {
+  width: 450px;
+  height: 100px;
+  border-radius: 6px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.88px;
+}
+.btn-call {
+  background-color: var(--sub-color-pink);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-call > .icon-call {
+  background: url(/assets/icon/call-white.svg);
+  height: 40px;
+  width: 40px;
+}
+.btn-form {
+  background-color: var(--sub-color-green);
+  color: var(--font-color-sub);
 }
 /* dock-characteristics */
 .dock-characteristics {
