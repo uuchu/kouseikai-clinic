@@ -1672,6 +1672,7 @@ footer {
 *
 *
 */
+/* houmon menu */
 .houmon-menu {
   max-width: 1280px;
 }
@@ -1686,6 +1687,7 @@ footer {
 .houmon-menu-body p:first-child {
   margin-bottom: 32px;
 }
+/* houmon flow */
 .houmon-flow {
   max-width: 1280px;
 }
@@ -1756,6 +1758,34 @@ footer {
   top: 32px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+/* houmon characteristics */
+.houmon-characteristics {
+  max-width: 1280px;
+  background-color: var(--sub-color-green);
+}
+.houmon-characteristics .top-section-title {
+  margin-bottom: 100px;
+}
+.houmon-characteristics-body {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.houmon-characteristics-body img {
+  width: 230px;
+}
+/* houmon doctor */
+.houmon-doctor {
+  max-width: 1280px;
+}
+.houmon-doctor .top-section-title {
+  margin-bottom: 93px;
+}
+.houmon-doctor-body {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 /**/
 .text-start {
