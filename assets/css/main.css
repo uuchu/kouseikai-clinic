@@ -1786,7 +1786,60 @@ footer {
 .houmon-doctor-body {
   max-width: 1000px;
   margin: 0 auto;
+  display: flex;
+  column-gap: 45px;
 }
+.houmon-doctor-body-left {
+  text-align: center;
+}
+.houmon-doctor-body-left img {
+  margin-bottom: 15px;
+}
+.houmon-doctor-body-name ruby {
+  color: #000;
+  text-align: center;
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: 24px;
+  letter-spacing: 1.2px;
+}
+.houmon-doctor-body-name rt {
+  color: #000;
+  text-align: center;
+  font-size: 12px;
+  line-height: 150%; /* 18px */
+  letter-spacing: 0.6px;
+}
+.houmon-doctor-body-right .career {
+  width: 660px;
+  height: 453px;
+}
+.houmon-doctor-body-right .career .row:nth-child(1) {
+  height: 141px;
+}
+.houmon-doctor-body-right .career .row:nth-child(2) {
+  border-radius: 0 0 0 0;
+  height: 157px;
+}
+.houmon-doctor-body-right .career .row:nth-child(2) dt {
+  border-radius: 0 0 0 0;
+}
+.houmon-doctor-body-right .career .row:nth-child(3) {
+  border-radius: 0 0 0 16px;
+  height: 152px;
+}
+.houmon-doctor-body-right .career .row:nth-child(3) dt {
+  border-radius: 0 0 0 16px;
+}
+.houmon-doctor-body-right .career dt {
+  flex-basis: 184px;
+}
+.houmon-doctor-body-right .career dd {
+  flex-basis: 476px;
+  padding-left: 25px;
+  padding-right: 32px;
+  padding-bottom: unset;
+}
+
 /**/
 .text-start {
   text-align: left !important;
