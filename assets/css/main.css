@@ -1382,6 +1382,7 @@ footer {
   text-align: center;
 }
 .dock-steps {
+  /*訪問診療のお申し込みフローでも使用*/
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -1671,7 +1672,91 @@ footer {
 *
 *
 */
-
+.houmon-menu {
+  max-width: 1280px;
+}
+.houmon-menu > .top-section-title {
+  margin-bottom: 46px;
+}
+.houmon-menu-body {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.houmon-menu-body p:first-child {
+  margin-bottom: 32px;
+}
+.houmon-flow {
+  max-width: 1280px;
+}
+.houmon-flow > .top-section-title {
+  margin-bottom: 46px;
+}
+.houmon-flow-body {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: var(--sub-color-green);
+  padding-top: 27px;
+  padding-bottom: 7px;
+  padding-left: 45px;
+  margin-bottom: 61px;
+}
+.houmon-flow-body .dock-steps > li > p:first-of-type {
+  color: var(--font-color);
+  font-weight: 400;
+}
+.houmon-flow-body .dock-steps li:last-of-type::after {
+  bottom: 28px;
+}
+.houmon-flow-bottom {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 46px;
+}
+.houmon-flow-bottom p:first-of-type {
+  text-align: center;
+  font-size: 33.18px;
+  font-weight: 400;
+  letter-spacing: 1.659px;
+  margin-bottom: 46px;
+}
+.download-buttons {
+  display: flex;
+  column-gap: 100px;
+}
+.download-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn-download {
+  width: 450px;
+  height: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.88px;
+  border: 1px solid var(--main-green);
+  border-radius: 6px;
+  position: relative;
+  transition: 0.6s;
+}
+.btn-download:hover {
+  background-color: var(--sub-color-green);
+}
+.btn-download > .icon-arrow {
+  position: absolute;
+  background: url(/assets/icon/row.svg);
+  height: 32px;
+  width: 32px;
+  right: 32px;
+  top: 32px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /**/
 .text-start {
   text-align: left !important;
