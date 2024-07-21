@@ -1316,6 +1316,7 @@ footer {
 */
 /* Dock template */
 .dock-list {
+  /* 訪問診療でも使用 */
   max-width: 1000px;
   background-color: #fff;
   padding: 35px 70px;
@@ -1839,7 +1840,18 @@ footer {
   padding-right: 32px;
   padding-bottom: unset;
 }
-
+/* houmon target */
+.houmon-target {
+  max-width: 1280px;
+  background-color: var(--sub-color-green);
+}
+.houmon-target .top-section-title {
+  margin-bottom: 46px;
+}
+.houmon-target-body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 /**/
 .text-start {
   text-align: left !important;
