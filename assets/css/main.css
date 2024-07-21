@@ -1866,6 +1866,24 @@ footer {
 .houmon-tae-body > .dock-list {
   background-color: var(--sub-color-green);
 }
+/* houmon-area */
+.houmon-area {
+  max-width: 1280px;
+  background-color: var(--sub-color-green);
+}
+.houmon-area .top-section-title {
+  margin-bottom: 46px;
+}
+.houmon-area-body {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.houmon-area-body > img {
+  margin-top: 46px;
+  max-width: 630px;
+  width: 100%;
+}
 /**/
 .text-start {
   text-align: left !important;
