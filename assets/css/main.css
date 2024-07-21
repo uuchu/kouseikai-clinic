@@ -53,13 +53,19 @@ body {
 .wrapper {
   margin: 0 auto;
 }
+
 @media only screen and (max-width: 1279px) {
   .wrapper {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
-
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 /* 装飾 */
 strong[class~='pink'] {
   color: #ff8888;
@@ -117,7 +123,33 @@ header {
   line-height: 32px;
   letter-spacing: -0.704px;
 }
-
+@media only screen and (max-width: 767px) {
+  header {
+    flex-wrap: wrap;
+    padding-top: 4px;
+    height: 105px;
+  }
+  .header-left {
+    margin: 0 auto;
+  }
+  .subtitle {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 9px;
+  }
+  .header-title {
+    font-size: 1.5rem;
+  }
+  .header-right {
+    margin: 0 auto;
+  }
+  .header-right > p {
+    font-size: 10px;
+  }
+  .call-btn {
+    font-size: 1.5rem;
+  }
+}
 /* first-view-swiper */
 .first-view-swiper {
   position: relative; /*scheduleのCSSは、Footerの次に記述*/
@@ -131,7 +163,11 @@ header {
   height: 100%;
   object-fit: cover;
 }
-
+@media only screen and (max-width: 767px) {
+  .first-view-swiper > .swiper-wrapper {
+    height: 450px;
+  }
+}
 /* Nav */
 nav {
   height: 150px;
@@ -202,6 +238,11 @@ nav {
     display: none;
   }
 }
+@media only screen and (max-width: 767px) {
+  .nav-wide {
+    display: none;
+  }
+}
 .info {
   max-width: 1280px;
   height: 468px;
@@ -231,9 +272,6 @@ nav {
   content: '';
   display: inline-block;
   max-width: 952px;
-  /* width: 100%;
-  height: 1px; */
-  /* background-color: var(--font-color); */
   bottom: 0px;
   right: 0;
   left: 0;
@@ -274,9 +312,6 @@ nav {
   content: '';
   display: inline-block;
   max-width: 952px;
-  /* width: 100%;
-  height: 1px; */
-  /* background-color: var(--font-color); */
   bottom: 0px;
   right: 0;
   left: 0;
@@ -299,6 +334,44 @@ nav {
   .info {
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .info {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: auto;
+  }
+  .info-inner {
+    height: auto;
+  }
+  .info-inner-header {
+    padding: 1rem 1rem 0 1rem;
+  }
+  .info-subtitle {
+    font-size: 10px;
+  }
+  .info-title {
+    font-size: 1rem;
+  }
+  .info-inner-body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .info-inner-body-link {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .info-detail-day {
+    font-size: 14px;
+  }
+  .info-detail-title {
+    font-size: 14px;
+  }
+  .info-inner-body-link:nth-last-of-type(1):after {
+    display: none;
   }
 }
 /* TOP ページ */
@@ -343,6 +416,14 @@ nav {
 }
 .information-body p:first-child {
   margin-bottom: 32px;
+}
+@media only screen and (max-width: 767px) {
+  .top-section-title > span {
+    font-size: 14px;
+  }
+  .top-section-title > h2 {
+    font-size: 1.5rem;
+  }
 }
 /* schedule */
 table {
@@ -397,6 +478,12 @@ td {
 }
 .shedule-tabele-border {
   border-bottom: 1px solid rgba(25, 167, 142, 0.4);
+}
+@media only screen and (max-width: 767px) {
+  .schedule-table {
+    border-collapse: collapse;
+    white-space: nowrap;
+  }
 }
 /* characteristics */
 .characteristics-wrapper {
@@ -498,11 +585,45 @@ td {
     margin-right: 0;
     margin-left: 0;
   }
+  .endlessSwiper {
+    left: -2rem;
+  }
   .endlessSwiper > .swiper-wrapper > .swiper-slide img {
     width: 24vw;
   }
 }
-
+@media only screen and (max-width: 767px) {
+  .characteristics-wrapper {
+    height: 1600px;
+  }
+  .wrapper-arc {
+    height: 1600px;
+  }
+  .characteristics-wrapper .top-section-title {
+    margin-bottom: 60px;
+  }
+  .characteristics-body {
+    flex-direction: column;
+    align-items: center;
+  }
+  .characteristics-body-item {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .characteristics-body-item-title,
+  .characteristics-body-item-title > strong {
+    font-size: 1.25rem;
+  }
+  .endlessSwiper {
+    height: auto;
+    bottom: 0;
+    left: -1rem;
+  }
+  .endlessSwiper > .swiper-wrapper > .swiper-slide img {
+    width: 45vw;
+    max-width: 160px;
+  }
+}
 /* menu */
 .menu-wrapper {
   margin-top: 65px;
@@ -554,6 +675,11 @@ td {
   .menu-body {
     row-gap: 60px;
     column-gap: 60px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .menu-body {
+    grid-template-columns: 1fr;
   }
 }
 /* アクセス・診療スケジュール */
@@ -697,12 +823,29 @@ td {
   .acces-table .shedule-tabel-border-index:after {
     max-width: 8.5vw;
   }
-  /* .acces-row > dt {
+}
+@media only screen and (max-width: 767px) {
+  .acces-body {
+    padding: 1rem;
+  }
+  .wrapper-box-accses:after {
+    left: -1rem;
+  }
+  .acces-row > dt {
     padding-bottom: 1rem;
   }
   .acces-row > dd {
     padding-top: 0;
-  } */
+  }
+  .acces-table {
+    overflow-x: scroll;
+  }
+  .acces-table .schedule-table {
+    width: 768px;
+  }
+  .acces-map {
+    margin-top: 0;
+  }
 }
 /* Group Links */
 .group-wrapper {
@@ -723,16 +866,22 @@ td {
   padding-bottom: 82px;
   margin: 0 auto;
 }
-
 .group-links a:nth-child(1) {
   grid-column: span 3;
   text-align: center;
 }
-
 .group-links img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+@media only screen and (max-width: 767px) {
+  .group-links {
+    grid-template-columns: 1fr;
+  }
+  .group-links a:nth-child(1) {
+    grid-column: 1;
+  }
 }
 /* footer */
 footer {
@@ -899,6 +1048,31 @@ footer {
     width: 100%;
   }
 }
+@media only screen and (max-width: 767px) {
+  .footer-top {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .footer-title {
+    font-size: 2rem;
+  }
+  .footer-access-row > dt {
+    text-align: left;
+  }
+  .footer-table {
+    overflow-x: scroll;
+  }
+  .footer-table .schedule-table {
+    width: 768px;
+  }
+  .footer-links {
+    margin-top: 2rem;
+  }
+  .footer-links > ul {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+}
 /* First View Schedule */
 .first-view-table {
   position: absolute;
@@ -955,7 +1129,11 @@ footer {
     margin: 0 auto;
   }
 }
-
+@media only screen and (max-width: 767px) {
+  .first-view-table {
+    display: none;
+  }
+}
 /*
 *
 * 
