@@ -809,7 +809,29 @@ footer {
   line-height: 44px;
   letter-spacing: -0.352px;
 }
-
+@media only screen and (max-width: 1279px) {
+  .footer-top {
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+  .footer-top-left {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-title,
+  .footer-access {
+    margin-bottom: 1rem;
+  }
+  .footer-table {
+    width: 100%;
+  }
+  .footer-map {
+    width: 100%;
+  }
+}
 /* First View Schedule */
 .first-view-table {
   position: absolute;
