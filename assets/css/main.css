@@ -1852,6 +1852,20 @@ footer {
   max-width: 1000px;
   margin: 0 auto;
 }
+/* houmon-tae(Treatment and Examination) */
+.houmon-tae {
+  max-width: 1280px;
+}
+.houmon-tae .top-section-title {
+  margin-bottom: 102px;
+}
+.houmon-tae-body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.houmon-tae-body > .dock-list {
+  background-color: var(--sub-color-green);
+}
 /**/
 .text-start {
   text-align: left !important;
