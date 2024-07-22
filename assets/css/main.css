@@ -251,6 +251,9 @@ nav {
   }
 }
 @media only screen and (max-width: 767px) {
+  nav {
+    display: none;
+  }
   .nav-wide {
     display: none;
   }
@@ -495,6 +498,7 @@ td {
   .schedule-table {
     border-collapse: collapse;
     white-space: nowrap;
+    width: 768px;
   }
 }
 /* characteristics */
@@ -852,9 +856,6 @@ td {
   .acces-table {
     overflow-x: scroll;
   }
-  .acces-table .schedule-table {
-    width: 768px;
-  }
   .acces-map {
     margin-top: 0;
   }
@@ -1055,6 +1056,7 @@ footer {
   }
   .footer-table .shedule-tabel-border-index:after {
     width: 10vw;
+    max-width: 115px;
   }
   .footer-map {
     width: 100%;
@@ -1074,15 +1076,20 @@ footer {
   .footer-table {
     overflow-x: scroll;
   }
-  .footer-table .schedule-table {
-    width: 768px;
-  }
   .footer-links {
     margin-top: 2rem;
   }
   .footer-links > ul {
     flex-wrap: wrap;
     margin-bottom: 0;
+  }
+  .footer-table .shedule-tabel-border-ampm:after {
+    width: 29vw;
+    min-width: 222px;
+  }
+  .footer-table .shedule-tabel-border-index:after {
+    width: 26vw;
+    max-width: 84px;
   }
 }
 /* First View Schedule */
@@ -1223,6 +1230,44 @@ footer {
   top: 23px;
   left: 24px;
 }
+@media only screen and (max-width: 767px) {
+  .page-title-header {
+    background-position: 24% 50%;
+  }
+  .page-title-header h2 {
+    font-size: 2rem;
+  }
+  .lower-layer-page-header {
+    height: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .lower-layer-page-header .header-left {
+    margin: 0 auto;
+  }
+  .lower-layer-page-header .header-right {
+    margin: 0 auto;
+  }
+  .lower-layer-page-wrapper {
+    padding-top: 0;
+  }
+  .lower-layer-page-wrapper .top-section-title {
+    margin-top: 0px !important;
+    padding-top: 46px;
+    margin-bottom: 46px;
+  }
+  .lower-layer-page-wrapper h3 {
+    height: 100%;
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+  .lower-layer-page-wrapper h3::before {
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+}
 /* mc-characteristics */
 .mc-characteristics {
   padding-bottom: 100px;
@@ -1285,7 +1330,21 @@ footer {
 .mc-menu-body img {
   max-width: 230px;
 }
-
+@media only screen and (max-width: 767px) {
+  .mc-menu-body {
+    align-items: center;
+    flex-direction: column;
+    row-gap: 46px;
+  }
+  .wrapper-box-menu .top-section-title {
+    margin-top: 46px;
+    margin-bottom: 46px;
+  }
+  .wrapper-box-menu:after {
+    left: -1rem;
+    right: -1rem;
+  }
+}
 /* mc-vaccin */
 .mc-vaccine {
   max-width: 1000px;
@@ -1355,6 +1414,9 @@ footer {
   margin-top: 16px;
   text-align: right;
 }
+.vaccine-price-list br {
+  display: none;
+}
 .shingles-list {
 }
 .shingles-list .row {
@@ -1402,6 +1464,27 @@ footer {
 .shingles-list dd > span {
   font-size: 32px;
   font-weight: 500;
+}
+@media only screen and (max-width: 767px) {
+  .vaccine-price-list {
+    padding: 2rem 1rem;
+  }
+  .vaccine-price-list dt {
+    padding: 5px 1rem;
+    height: 100%;
+  }
+  .vaccine-price-list dd > span {
+    font-size: 1.5rem;
+  }
+  .vaccine-price-list br {
+    display: block;
+  }
+  .shingles-list dt {
+    margin: 0;
+  }
+  .shingles-list dd {
+    text-align: right;
+  }
 }
 /* mc-NoSmork */
 .mc-nosmork {
@@ -1543,6 +1626,37 @@ footer {
   content: '';
   margin: 4px 0;
 }
+@media only screen and (max-width: 767px) {
+  .mc-doctor-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 2rem;
+  }
+  .doctor-txt {
+    position: unset;
+    width: 100%;
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+  }
+  .doctor-txt > h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .mc-doctor-body > img {
+    position: unset;
+    background-size: cover;
+    width: 100%;
+  }
+  .career dt {
+    padding: 10px 0;
+    text-align: center;
+  }
+  .career dd {
+    padding: 10px;
+  }
+}
 /* mc-schedule */
 .mc-schedule {
   max-width: 1280px;
@@ -1592,7 +1706,33 @@ footer {
   color: inherit;
   font-size: 10px;
 }
-
+@media only screen and (max-width: 1279px) {
+  .mc-schedule-body .shedule-tabel-border-ampm:after {
+    max-width: 207px;
+    width: 17vw;
+  }
+  .mc-schedule-body .shedule-tabel-border-index:after {
+    width: 8vw;
+    max-width: 76px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mc-schedule .top-section-title {
+    margin-bottom: 46px;
+  }
+  .mc-schedule-body {
+    padding: 1rem;
+    overflow-x: scroll;
+  }
+  .mc-schedule-body .shedule-tabel-border-ampm:after {
+    width: 57vw;
+    max-width: 182px;
+  }
+  .mc-schedule-body .shedule-tabel-border-index:after {
+    width: 24vw;
+    max-width: 76px;
+  }
+}
 /* 
 *
 *
