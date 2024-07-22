@@ -233,6 +233,9 @@ nav {
   line-height: 150%; /* 34.56px */
   letter-spacing: -0.507px;
 }
+.nav-spmenu-home {
+  display: none;
+}
 @media only screen and (max-width: 1279px) {
   nav {
     height: 113px;
@@ -258,6 +261,12 @@ nav {
   }
   .nav-inner a:after {
     display: none;
+  }
+  .nav-spmenu-home {
+    display: block;
+  }
+  .nav-spmenu-home li {
+    justify-content: center !important;
   }
 }
 /* ハンバーガーメニュー */
