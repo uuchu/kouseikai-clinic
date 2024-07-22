@@ -1,3 +1,4 @@
+//First View Swiper
 var swiper = new Swiper('.mySwiper', {
   loop: true,
   autoplay: {
@@ -11,7 +12,7 @@ var swiper = new Swiper('.mySwiper', {
   },
   allowTouchMove: false,
 });
-
+//Swiper 無限ループ
 const endlessSwiper = new Swiper('.endlessSwiper', {
   loop: true, // ループ有効
   slidesPerView: 6, // 一度に表示する枚数
@@ -22,6 +23,7 @@ const endlessSwiper = new Swiper('.endlessSwiper', {
   },
 });
 
+// ハンバーガーメニュ
 const btn = document.getElementById('nav-switch');
 const menu = document.getElementById('nav-menu');
 const links = document.querySelectorAll('#nav-menu a');
