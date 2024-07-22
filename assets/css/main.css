@@ -1218,7 +1218,7 @@ footer {
 .lower-layer-page-wrapper h3 {
   background-color: var(--sub-color-green);
   width: 100%;
-  height: 80px;
+  height: 100%;
   border-radius: 6px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -1236,7 +1236,9 @@ footer {
   width: 2px;
   height: 33.18px;
   background-color: var(--main-green);
-  top: 23px;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+
   left: 24px;
 }
 @media only screen and (max-width: 767px) {
@@ -1268,13 +1270,8 @@ footer {
     margin-bottom: 46px;
   }
   .lower-layer-page-wrapper h3 {
-    height: 100%;
-    font-size: 1.5rem;
-    line-height: 30px;
-  }
-  .lower-layer-page-wrapper h3::before {
-    top: 50%;
-    transform: translateY(-50%) translateX(-50%);
+    font-size: 1.5rem !important;
+    line-height: 30px !important;
   }
 }
 /* mc-characteristics */
@@ -1934,6 +1931,32 @@ footer {
   background-color: var(--sub-color-green);
   color: var(--font-color-sub);
 }
+@media only screen and (max-width: 1279px) {
+  .cta-buttons {
+    flex-direction: column;
+    row-gap: 100px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .cta-buttons {
+    row-gap: 70px;
+  }
+  .btn-call,
+  .btn-form {
+    width: 100%;
+    font-size: 1.5rem;
+    height: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .cta-form-body > p:first-child {
+    margin-bottom: 70px;
+  }
+  .btn-call > .icon-call {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
 /* dock-characteristics */
 .dock-characteristics {
   max-width: 1000px;
@@ -1948,6 +1971,13 @@ footer {
 }
 .dock-characteristics-body img {
   width: 230px;
+}
+@media only screen and (max-width: 767px) {
+  .dock-characteristics-body {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+  }
 }
 /* dock-menu */
 .dock-menu {
@@ -1968,6 +1998,11 @@ footer {
   background-color: var(--sub-color-green);
   padding: 35px 70px;
   margin-top: 0;
+}
+@media only screen and (max-width: 767px) {
+  .dock-list-menu {
+    padding: 2rem 1.5rem;
+  }
 }
 /* dock-phe(Public Health Examination) */
 .dock-phe {
@@ -1990,6 +2025,30 @@ footer {
 .dock-phe-body > p:last-of-type {
   margin-bottom: 46px;
 }
+@media only screen and (max-width: 1279px) {
+  .dock-phe-body .shingles-list .row {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .dock-phe-body .shingles-list dt {
+    margin-right: 0;
+    padding-left: 0;
+  }
+  .dock-phe-body .shingles-list dd {
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .dock-phe-body .shingles-list .row {
+    flex-wrap: wrap;
+    margin: 1rem 0 0;
+    row-gap: 1rem;
+  }
+  .dock-phe-body .dock-list {
+    padding: 1rem 1rem 2rem;
+    margin-top: 90px;
+  }
+}
 /* dock chc(Corporate Health Check-up) */
 .dock-chc {
   background-color: #fff;
@@ -2011,6 +2070,30 @@ footer {
 .dock-chc-body > p:last-of-type {
   margin-bottom: 46px;
 }
+@media only screen and (max-width: 1279px) {
+  .dock-chc-body .shingles-list .row {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .dock-chc-body .shingles-list dt {
+    margin-right: 0;
+    padding-left: 0;
+  }
+  .dock-chc-body .shingles-list dd {
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .dock-chc-body .shingles-list .row {
+    flex-wrap: wrap;
+    margin: 1rem 0 0;
+    row-gap: 1rem;
+  }
+  .dock-chc-body .dock-list {
+    padding: 1rem 1rem 2rem;
+    margin-top: 90px;
+  }
+}
 /* dock-shc(Specific health checkup ) */
 .dock-shc {
   background-color: var(--sub-color-green);
@@ -2023,6 +2106,9 @@ footer {
   max-width: 1000px;
   margin: 0 auto;
 }
+.dock-shc-body > h3 {
+  background-color: #fff;
+}
 .dock-shc-body > p {
   text-align: center;
 }
@@ -2033,6 +2119,41 @@ footer {
   text-align: left !important;
   margin-top: 46px;
   margin-bottom: 46px;
+}
+@media only screen and (max-width: 1279px) {
+  .dock-shc-body .shingles-list .row {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 1rem;
+  }
+  .dock-shc-body .shingles-list dt {
+    margin-right: 0;
+    padding-left: 0;
+    flex-basis: 180px;
+  }
+  .dock-shc-body .shingles-list dd {
+    flex-basis: 504px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .dock-shc-body .shingles-list .row {
+    flex-wrap: wrap;
+    margin: 1rem 0 0;
+    row-gap: 1rem;
+  }
+  .dock-shc-body .dock-list {
+    padding: 1rem 1rem 2rem;
+    margin-top: 85px;
+  }
+  .dock-shc-body .dock-list h3:nth-of-type(1) {
+    top: -70px;
+  }
+  .dock-shc-body .dock-list:nth-last-child(1) h3 {
+    top: -100px;
+  }
+  .dock-shc-body .dock-list:nth-last-child(1) {
+    margin-top: 110px;
+  }
 }
 /* dock-shg(Specific health guidance) */
 .dock-shg {
@@ -2099,6 +2220,36 @@ footer {
 }
 .about-abi p:first-child {
   margin-bottom: 32px;
+}
+@media only screen and (max-width: 1279px) {
+  .dock-dock-body .shingles-list .row {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .dock-dock-body .shingles-list dt {
+    margin-right: 0;
+    padding-left: 0;
+  }
+  .dock-dock-body .shingles-list dd {
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .dock-dock-body .shingles-list .row {
+    flex-wrap: wrap;
+    margin: 1rem 0 0;
+    row-gap: 1rem;
+  }
+  .dock-dock-body .dock-list {
+    padding: 1rem 1rem 2rem;
+    margin-top: 90px;
+  }
+  .about-abi {
+    flex-direction: column;
+  }
+  .about-abi img {
+    width: 100%;
+  }
 }
 /*
 *
