@@ -2342,9 +2342,37 @@ footer {
   height: 32px;
   width: 32px;
   right: 32px;
-  top: 32px;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media only screen and (max-width: 1279px) {
+  .houmon-flow-body {
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+  .download-buttons {
+    flex-direction: column;
+    row-gap: 70px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .houmon-flow-bottom p:first-of-type {
+    font-size: 1.5rem;
+  }
+  .houmon-flow-body .dock-steps li:last-of-type::after {
+    bottom: 14px;
+  }
+  .btn-download {
+    width: 100%;
+    height: 70px;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .icon-arrow {
+  }
 }
 /* houmon characteristics */
 .houmon-characteristics {
@@ -2363,6 +2391,14 @@ footer {
 .houmon-characteristics-body img {
   width: 230px;
 }
+@media only screen and (max-width: 767px) {
+  .houmon-characteristics-body {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+}
+
 /* houmon doctor */
 .houmon-doctor {
   max-width: 1280px;
@@ -2413,6 +2449,7 @@ footer {
 .houmon-doctor-body-right .career .row:nth-child(3) {
   border-radius: 0 0 0 16px;
   height: 152px;
+  border-bottom: unset;
 }
 .houmon-doctor-body-right .career .row:nth-child(3) dt {
   border-radius: 0 0 0 16px;
@@ -2426,6 +2463,26 @@ footer {
   padding-right: 32px;
   padding-bottom: unset;
 }
+@media only screen and (max-width: 1279px) {
+  .houmon-doctor-body {
+    flex-direction: column;
+    row-gap: 60px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .houmon-doctor-body-right .career {
+    width: 100%;
+  }
+  .houmon-doctor-body-right .career dd {
+    padding: 10px;
+  }
+  .houmon-doctor-body-right .career .row:nth-child(1) {
+    height: 190px;
+  }
+  .houmon-doctor-body-right .career {
+    height: 100%;
+  }
+}
 /* houmon target */
 .houmon-target {
   max-width: 1280px;
@@ -2437,6 +2494,12 @@ footer {
 .houmon-target-body {
   max-width: 1000px;
   margin: 0 auto;
+}
+@media only screen and (max-width: 767px) {
+  .houmon-target-body .dock-list {
+    padding: 1rem 1rem 2rem;
+    margin-top: 90px;
+  }
 }
 /* houmon-tae(Treatment and Examination) */
 .houmon-tae {
@@ -2451,6 +2514,12 @@ footer {
 }
 .houmon-tae-body > .dock-list {
   background-color: var(--sub-color-green);
+}
+@media only screen and (max-width: 767px) {
+  .houmon-tae-body .dock-list {
+    padding: 1rem 1rem 2rem;
+    margin-top: 90px;
+  }
 }
 /* houmon-area */
 .houmon-area {
