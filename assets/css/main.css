@@ -167,6 +167,18 @@ header {
   .first-view-swiper > .swiper-wrapper {
     height: 450px;
   }
+  .swiper-slide-img-1 {
+    object-position: 63% 50%;
+  }
+  .swiper-slide-img-2 {
+    object-position: 42% 50%;
+  }
+  .swiper-slide-img-3 {
+    object-position: 64% 50%;
+  }
+  .swiper-slide-img-4 {
+    object-position: 25% 50%;
+  }
 }
 /* Nav */
 nav {
