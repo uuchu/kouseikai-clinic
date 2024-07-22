@@ -127,7 +127,8 @@ header {
   header {
     flex-wrap: wrap;
     padding-top: 4px;
-    height: 105px;
+    align-items: center;
+    height: 110px;
   }
   .header-left {
     margin: 0 auto;
@@ -858,6 +859,14 @@ td {
   }
   .acces-map {
     margin-top: 0;
+  }
+  .acces-table .shedule-tabel-border-ampm:after {
+    width: 58vw;
+    max-width: 184px;
+  }
+  .acces-table .shedule-tabel-border-index:after {
+    max-width: 77px;
+    width: 23vw;
   }
 }
 /* Group Links */
