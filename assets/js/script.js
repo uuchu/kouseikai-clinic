@@ -21,3 +21,19 @@ const endlessSwiper = new Swiper('.endlessSwiper', {
     delay: 0, // 途切れなくループ
   },
 });
+
+const btn = document.getElementById('nav-switch');
+const menu = document.getElementById('nav-menu');
+const links = document.querySelectorAll('#nav-menu a');
+
+btn.addEventListener('click', () => {
+  btn.classList.toggle('on');
+  menu.classList.toggle('on');
+});
+
+links.forEach((link) => {
+  link.addEventListener('click', () => {
+    btn.classList.toggle('on');
+    menu.classList.toggle('on');
+  });
+});
