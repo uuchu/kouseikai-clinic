@@ -48,7 +48,7 @@ body {
   width: 26px;
   height: 26px;
   margin-right: 5px;
-  background: url(/assets/icon/call.svg);
+  background: url(../../assets/icon/call.svg);
 }
 
 /* 全体 */
@@ -354,7 +354,7 @@ nav {
   margin: 0 auto;
   padding-top: 56px;
   padding-bottom: 56px;
-  background-image: url(/assets/img/TOP/info-bg-img.webp);
+  background-image: url(../../assets/img/TOP/info-bg-img.webp);
 }
 .info-inner {
   width: 100%;
@@ -753,7 +753,7 @@ td {
 }
 .menu-item > ul {
   list-style-position: inside;
-  list-style-image: url(/assets/icon/row.svg);
+  list-style-image: url(../../assets/icon/row.svg);
   margin-top: 25px;
   padding-right: 11px;
   padding-left: 15px;
@@ -1276,7 +1276,7 @@ footer {
   max-width: 1280px;
   height: 200px;
   margin: 0 auto;
-  background-image: url(/assets/img/lower-layer/header-img.webp);
+  background-image: url(../../assets/img/lower-layer/header-img.webp);
   background-color: var(--main-green);
 }
 .page-title-header h2 {
@@ -1867,7 +1867,7 @@ footer {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 39px;
-  background-image: url(/assets/icon/check.svg);
+  background-image: url(../../assets/icon/check.svg);
   background-position: left center;
   background-repeat: no-repeat;
   line-height: 200%;
@@ -1937,7 +1937,7 @@ footer {
   left: -29px;
   width: 16px;
   height: 16px;
-  background-image: url(/assets/icon/arrow-gray.svg);
+  background-image: url(../../assets/icon/arrow-gray.svg);
   content: '';
 }
 .dock-steps::after {
@@ -2013,7 +2013,7 @@ footer {
 .btn-call > .icon-call {
   width: 40px;
   height: 40px;
-  background: url(/assets/icon/call-white.svg);
+  background: url(../../assets/icon/call-white.svg);
 }
 .btn-form {
   background-color: var(--sub-color-green);
@@ -2440,7 +2440,7 @@ footer {
   transform: translateY(-50%) translateX(-50%);
   width: 32px;
   height: 32px;
-  background: url(/assets/icon/row.svg);
+  background: url(../../assets/icon/row.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
